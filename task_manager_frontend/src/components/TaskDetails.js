@@ -1,8 +1,7 @@
 import React from "react"
 
-const Task  = props => <div>
+const TaskDetails  = props => <div>
     {props.currentTask}
 </div>
 
-
-export default Task
+export default TaskDetails

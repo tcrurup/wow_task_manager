@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Task from "../components/Task"
+import TaskDetails from "../components/TaskDetails"
 
 class TaskBox extends Component{
     
@@ -21,7 +21,7 @@ class TaskBox extends Component{
 
     newTask(){
         this.setState(prevState => {
-            return { tasks: [...prevState.tasks, <Task currentTask="N/A"/>] }
+            return { tasks: [...prevState.tasks, <TaskDetails currentTask="N/A"/>] }
         })
     }
 }
