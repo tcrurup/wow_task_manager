@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Task from "./Task"
+import Task from "../components/Task"
 
 class TaskBox extends Component{
     
@@ -12,7 +12,6 @@ class TaskBox extends Component{
     }
     
     render = () => {
-        console.log(this.state.tasks)
         return <div className="taskBox">
             <button type="button" onClick={this.newTask.bind(this)}>New Task</button>
             {this.state.tasks}
@@ -21,7 +20,7 @@ class TaskBox extends Component{
 
     newTask(){
         this.setState(prevState => {
-            return { tasks: [...prevState.tasks, <Task/>] }
+            return { tasks: [...prevState.tasks, <Task currentTask="N/A"/>] }
         })
     }
 }
