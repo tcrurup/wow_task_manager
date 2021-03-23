@@ -7,12 +7,13 @@ class Task extends Component{
         super(props)
 
         this.state = {
-            task : "N/A",
+            progress : [0, 0],
+            details : "N/A",
             completed: false
         }
     }
 
-    render = () => <TaskDetails currentTask={this.state.task}/>
+    render = () => <TaskDetails task={this.state}/>
 }
 
 
