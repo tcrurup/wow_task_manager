@@ -13,6 +13,7 @@ class TaskBox extends Component{
     
     render = () => {
         return <div className="taskBox">
+            {this.props.taskBoxType}
             <button type="button" onClick={this.newTask.bind(this)}>New Task</button>
             {this.state.tasks}
         </div>

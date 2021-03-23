@@ -4,7 +4,9 @@ import TaskBox from './containers/TaskBox'
 function App() {
   return (
     <div className="App">
-      <TaskBox/>
+      <TaskBox taskBoxType="Weekly"/>
+      <TaskBox taskBoxType="Daily"/>
+      <TaskBox taskBoxType="General"/>
     </div>
   );
 }
