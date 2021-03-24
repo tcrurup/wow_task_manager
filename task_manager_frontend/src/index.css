@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div.task{
+  display:flex;
+  flex-direction: row;
+}
+
+div.task-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: solid black 2px;
+  margin: 10px;
+}
+
+div.task-box button{
+  width: 200px;
+}

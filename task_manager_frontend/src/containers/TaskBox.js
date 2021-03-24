@@ -8,12 +8,12 @@ class TaskBox extends Component{
         super(props);
 
         this.state = {
-            tasks: []
+            tasks: []            
         };
     }
     
     render = () => {
-        return <div className="taskBox">
+        return <div className="task-box">
             {this.props.taskBoxType}
             <button type="button" onClick={this.newTask.bind(this)}>New Task</button>
             {this.state.tasks}
@@ -22,7 +22,7 @@ class TaskBox extends Component{
 
     newTask(){
         this.setState(prevState => {
-            return { tasks: [...prevState.tasks, <Task/>] }
+            return { tasks : [...prevState.tasks, <Task />] }
         })
     }
 }
