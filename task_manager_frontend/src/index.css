@@ -15,6 +15,30 @@ code {
 div.task{
   display:flex;
   flex-direction: row;
+  width: 100%;
+}
+
+div.task-character{
+  width: 10%;
+}
+
+div.task-details{
+  width: 70%;
+}
+
+div.task-progress{
+  width: 20%;
+}
+
+div.task-progress div.progress-bar{
+  width: 90%;
+  height: 20px;
+  background-color: darkgray;
+}
+
+div.task-progress div.progress-bar div.progress-bar-fill{
+  height: 98%;
+  background-color: darkslateblue;
 }
 
 div.task-box{

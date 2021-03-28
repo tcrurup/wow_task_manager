@@ -11,13 +11,13 @@ class ProgressIndicator extends Component{
 
     onChange = event => this.setState({ type: event.target.value })
 
-    render = () => <div className="progress-indicator"> 
+    render = () => <> 
         {this.indicatorToRender()}
         <select onChange={this.onChange}>
             <option value="fraction">Fraction</option>
             <option value="progressBar">Progress Bar</option>
         </select>
-    </div>
+    </>
 
     indicatorToRender(){
         const x = this.props.progress.current
@@ -37,9 +37,7 @@ class ProgressIndicator extends Component{
 
     progressBar(current, target){
         return <div className="progress-bar"> 
-            <div className="progress-bar-fill" style={{ width: `${target/current}%` }}>
-
-            </div>
+            <div className="progress-bar-fill" style={{ width: `${current/target*100}%` }} />
         </div>
     }
 

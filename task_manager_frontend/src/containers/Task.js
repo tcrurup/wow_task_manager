@@ -18,8 +18,8 @@ class Task extends Component{
 
     render = () => <div className="task">
         <div className = "task-character"></div>
-        {this.state.details}
-        <ProgressIndicator progress={this.state.taskProgress} />
+        <div className = "task-details"> {this.state.details} </div>
+        <div className = "task-progress"> <ProgressIndicator progress={this.state.taskProgress} /> </div>
     </div>
 
 }
