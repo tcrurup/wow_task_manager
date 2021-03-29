@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import Pet from "../components/Pet"
+import PetTypes from "../constants/PetTypes"
 
 class PetMatcher extends Component{
 
@@ -7,7 +9,7 @@ class PetMatcher extends Component{
     }
 
     render = () => <div className="pet-matcher">
-
+        {PetTypes.AQUATIC}
     </div>
 }
 
