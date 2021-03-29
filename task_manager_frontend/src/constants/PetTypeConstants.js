@@ -1,56 +1,56 @@
-import PetTypes from "./PetTypesOLD"
+import PetTypeEnum from "../enums/PetTypeEnum"
 
 const ALL_PET_MATCHUPS = [
     
     Object.freeze({
-        name: PetTypes.AQUATIC,
-        strongAttack: PetTypes.ELEMENTAL,
-        strongDefense: PetTypes.UNDEAD
+        name: PetTypeEnum.AQUATIC,
+        strongAttack: PetTypeEnum.ELEMENTAL,
+        strongDefense: PetTypeEnum.UNDEAD
     }),
     Object.freeze({
-        name: PetTypes.BEAST,
-        strongAttack: PetTypes.CRITTER,
-        strongDefense: PetTypes.HUMANOID
+        name: PetTypeEnum.BEAST,
+        strongAttack: PetTypeEnum.CRITTER,
+        strongDefense: PetTypeEnum.HUMANOID
     }),
     Object.freeze({
-        name: PetTypes.CRITTER,
-        strongAttack: PetTypes.UNDEAD,
-        strongDefense: PetTypes.ELEMENTAL
+        name: PetTypeEnum.CRITTER,
+        strongAttack: PetTypeEnum.UNDEAD,
+        strongDefense: PetTypeEnum.ELEMENTAL
     }),
     Object.freeze({
-        name: PetTypes.DRAGONKIN,
-        strongAttack: PetTypes.MAGIC,
-        strongDefense: PetTypes.FLYING
+        name: PetTypeEnum.DRAGONKIN,
+        strongAttack: PetTypeEnum.MAGIC,
+        strongDefense: PetTypeEnum.FLYING
     }),
     Object.freeze({
-        name: PetTypes.ELEMENTAL,
-        strongAttack: PetTypes.MECHANICAL,
-        strongDefense: PetTypes.MECHANICAL
+        name: PetTypeEnum.ELEMENTAL,
+        strongAttack: PetTypeEnum.MECHANICAL,
+        strongDefense: PetTypeEnum.MECHANICAL
     }),
     Object.freeze({
-        name: PetTypes.FLYING,
-        strongAttack: PetTypes.AQUATIC,
-        strongDefense: PetTypes.BEAST
+        name: PetTypeEnum.FLYING,
+        strongAttack: PetTypeEnum.AQUATIC,
+        strongDefense: PetTypeEnum.BEAST
     }),
     Object.freeze({
-        name: PetTypes.HUMANOID,
-        strongAttack: PetTypes.DRAGONKIN,
-        strongDefense: PetTypes.CRITTER
+        name: PetTypeEnum.HUMANOID,
+        strongAttack: PetTypeEnum.DRAGONKIN,
+        strongDefense: PetTypeEnum.CRITTER
     }),
     Object.freeze({
-        name: PetTypes.MAGIC,
-        strongAttack: PetTypes.FLYING,
-        strongDefense: PetTypes.BEAST
+        name: PetTypeEnum.MAGIC,
+        strongAttack: PetTypeEnum.FLYING,
+        strongDefense: PetTypeEnum.BEAST
     }),
     Object.freeze({
-        name: PetTypes.MECHANICAL,
-        strongAttack: PetTypes.BEAST,
-        strongDefense: PetTypes.MAGIC
+        name: PetTypeEnum.MECHANICAL,
+        strongAttack: PetTypeEnum.BEAST,
+        strongDefense: PetTypeEnum.MAGIC
     }),
     Object.freeze({
-        name: PetTypes.UNDEAD,
-        strongAttack: PetTypes.HUMANOID,
-        strongDefense: PetTypes.DRAGONKIN
+        name: PetTypeEnum.UNDEAD,
+        strongAttack: PetTypeEnum.HUMANOID,
+        strongDefense: PetTypeEnum.DRAGONKIN
     })
 
 ]

@@ -1,4 +1,4 @@
-const PetTypes = {
+const PetTypeEnum = {
     AQUATIC: "aquatic",
     BEAST: "beast",
     CRITTER: "critter",
@@ -11,5 +11,5 @@ const PetTypes = {
     UNDEAD: "undead"
 }
 
-export default PetTypes
+export default PetTypeEnum
 
