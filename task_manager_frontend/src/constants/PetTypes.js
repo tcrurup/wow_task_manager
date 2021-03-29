@@ -1,5 +1,3 @@
-import React from "react"
-
 const PetTypes = {
     AQUATIC: "aquatic",
     BEAST: "beast",

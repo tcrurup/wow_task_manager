@@ -6,7 +6,7 @@ class PetTeam extends Component{
         super(props)
     }
 
-
+    
 }
 
 export default PetTeam
