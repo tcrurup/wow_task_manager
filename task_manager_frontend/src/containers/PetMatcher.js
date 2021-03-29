@@ -1,14 +1,15 @@
 import React, { Component } from "react"
-import PetTypeMatchUps from "../constants/PetTypeMatchUps"
+import PetTypes from "../components/PetTypes"
 
 class PetMatcher extends Component{
 
     constructor(props){
         super(props)
+        this.petTypes = new PetTypes()
     }
 
     render = () => <div className="pet-matcher">
-        {PetTypeMatchUps.AQUATIC.name}
+        {PetTypes.allPetMatchups.length}
     </div>
 }
 
