@@ -9,7 +9,7 @@ class PetMatcher extends Component{
     }
 
     render = () => <div className="pet-matcher">
-        {PetTypes.allPetMatchups.length}
+        {this.petTypes.whatIsStrongAttackAgaint("aquatic")}
     </div>
 }
 
